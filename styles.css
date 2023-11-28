@@ -2,12 +2,45 @@ body {
     background-image: url("https://www.geowiki.fr/images/1/17/Ciel_%C3%A9toil%C3%A9.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    
 }
 
-#blue {
-    color: blue;
+@keyframes textmouvement {
+    0% { 
+        transform: translateY(90%) rotateX(45deg);
+
+    }
+
+    100% {
+        transform: translateY(0%) rotateX(45deg);
+    }
 }
 
-p {
+.perspective {
+    perspective: 500px;
+}
+
+.text {
+    color: yellow;
+    font-size: xx-large;
+    transform: rotateX(45deg);
     text-align: center;
+    animation-name: textmouvement;
+    animation-duration: 15s;
+    animation-fill-mode: linear forwards;
+    width: auto;
+    height: auto;
 }
+img {
+    width: 150px;
+    height: 100px;
+    transform: rotateX(45deg);
+    text-align: center;
+    animation-name: textmouvement;
+    animation-duration: 15s;
+    animation-fill-mode: linear forwards;
+    text-align: center;
+    
+}
+
