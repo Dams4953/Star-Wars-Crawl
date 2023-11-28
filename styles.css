@@ -1,0 +1,13 @@
+body {
+    background-image: url("https://www.geowiki.fr/images/1/17/Ciel_%C3%A9toil%C3%A9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#blue {
+    color: blue;
+}
+
+p {
+    text-align: center;
+}
